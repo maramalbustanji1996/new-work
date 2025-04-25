@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Artistic!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="video_2025-04-24_13-09-37.mp4" type="video/mp4">
+      </video>
+      
+    <div class="container">
+        <h1>Welcome to Artistic!</h1>
+        <p>Let's define your role in the arts (you can choose both):</p>
+        <div class="options">
+            <label class="option">
+                <input type="checkbox" id="artist" name="role" value="artist">
+                Continue as an Artist
+            </label>
+            <label class="option">
+                <input type="checkbox" id="enthusiast" name="role" value="enthusiast">
+                Continue as an Art Enthusiast
+            </label>
+        </div>
+        <button type="button" class="btn btn-secondary " onclick="handleSelection()">Get Started</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
